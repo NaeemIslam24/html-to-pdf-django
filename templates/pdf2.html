@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+          <h1>{{customer.name}}</h1>
+          <hr>
+          <p>{{customer.description|linebreaks}}</p>
+         
+          <img src="{{customer.logo.path}}" alt="">
+          
+       
+         
+
+{% endblock content %}
