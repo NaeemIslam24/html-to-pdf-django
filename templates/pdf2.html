@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
-          <h1>{{customer.name}}</h1>
+           <!-- bootstrap or load static not
+            work with this page cause pdf. but inline css and internal css work-->
+          <h1 style="color:red;">{{customer.name}}</h1>
           <hr>
           <p>{{customer.description|linebreaks}}</p>
          
